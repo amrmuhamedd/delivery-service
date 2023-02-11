@@ -1,0 +1,47 @@
+services:
+  client:
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+      target: development
+    command: npm run start
+    env_file:
+      - ./client/.env
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./client:/client
+      - ./:/client:delegated
+    ports:
+      - '3005:3005'
+  dashboard:
+    build:
+      context: .
+      dockerfile: ./dashboard/Dockerfile
+      target: development
+    command: npm run start
+    env_file:
+      - ./dashboard/.env
+    environment:
+      - CHOKIDAR_USEPOLLING=true     
+    volumes:
+      - ./dashboard:/dashboard
+      - ./:/dashboard:delegated
+    ports:
+      - '3006:3006'
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+      target: development
+    command: npm run start:dev
+    ports:
+      - '4000:4000'
+    env_file:
+      - ./server/.env
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./server:/server
+      - ./:/server:delegated
+ 
