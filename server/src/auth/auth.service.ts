@@ -3,14 +3,14 @@ import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User, UsersDocumenet } from './model/users';
+import { User, UsersDocument } from './model/users';
 import { CreateUserDto } from './dto/createuser.dto';
 
 @Injectable()
 export class AuthService {
   constructor(
     private jwtService: JwtService,
-    @InjectModel(User.name) private userModel: Model<UsersDocumenet>,
+    @InjectModel(User.name) private userModel: Model<UsersDocument>,
   ) {}
   async validateUser(username: string, pass: string): Promise<any> {
     const name = await this.userModel.findOne({ username: username }).exec();

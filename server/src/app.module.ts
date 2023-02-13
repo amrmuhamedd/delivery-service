@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule} from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
+import { ParcelsModule } from './parcels/parcels.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { AuthModule } from './auth/auth.module';
       useNewUrlParser: true, 
     }),
     AuthModule,
+    ParcelsModule
   ],
   controllers: [],
   providers: [],
