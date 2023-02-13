@@ -1,0 +1,92 @@
+export const usersData = [
+  {
+    username: 'amr',
+    email: 'amr@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'ahmed',
+    email: 'isandlin2@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'mohamed',
+    email: 'mohamed@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'sayed',
+    email: 'sayed@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'marc',
+    email: 'marc@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'sara',
+    email: 'sara@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'mai',
+    email: 'mai@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'mahmoud',
+    email: 'mahmoud@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'michel',
+    email: 'michel@test.com',
+    password: '123456789',
+    roles: 'biker',
+  },
+  {
+    username: 'dalia',
+    email: 'dalia@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+  {
+    username: 'fares',
+    email: 'fares@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+  {
+    username: 'fady',
+    email: 'fady@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+  {
+    username: 'ramy',
+    email: 'ramy@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+  {
+    username: 'rana',
+    email: 'rana@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+  {
+    username: 'asmaa',
+    email: 'asmaa@test.com',
+    password: '123456789',
+    roles: 'sender',
+  },
+];

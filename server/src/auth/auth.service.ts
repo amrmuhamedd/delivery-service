@@ -93,4 +93,20 @@ export class AuthService {
       );
     }
   }
+
+  async seed(data: any) {
+    await data.forEach(async (item) => {
+      const userExist = await this.userModel.findOne({ email: item.email });
+      if (userExist) return Promise.resolve(null);
+      const saltOrRounds = 12;
+      const password = item.password;
+      const hashedPassword = await bcrypt.hash(password, saltOrRounds);
+       Promise.resolve(
+        await this.userModel.create({
+          ...item,
+          password: hashedPassword,
+        }),
+      );
+    });
+  }
 }
