@@ -1,0 +1,31 @@
+.auth-form{
+    background-color: #FCFCFC;
+    min-width: 500px;
+    height: 640px;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .ant-btn {
+        display: block;
+        width: 200px;
+        background-color: #292524;
+    }
+    .ant-input {
+        width: 400px;
+        height: 40px;
+    }
+    .ant-form-item-control-input-content{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #292524;
+    }
+    a{
+        color: #292524;
+        text-decoration: underline;
+    }
+}
