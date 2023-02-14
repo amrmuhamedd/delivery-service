@@ -12,6 +12,9 @@
         display: block;
         width: 200px;
         background-color: #292524;
+        &:hover {
+            background-color: #423936;     
+        }
     }
     .ant-input {
         width: 400px;
@@ -23,6 +26,7 @@
         justify-content: center;
         flex-direction: column;
         color: #292524;
+       
     }
     a{
         color: #292524;

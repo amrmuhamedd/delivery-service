@@ -1,7 +1,6 @@
 import { Form , Input , Button} from "antd"
 import {UserOutlined , LockOutlined} from '@ant-design/icons';
 import {Link} from 'react-router-dom'
-import './loginform.scss'
 import Logo from "../ui/logo/logo";
 interface Iprops {
     handleFinish : (values :any) => void

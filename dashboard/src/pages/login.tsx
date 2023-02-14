@@ -4,7 +4,7 @@ import Logo from '../components/ui/logo/logo'
 import './login.scss'
 function Login() {
   return (
-    <div className='login-page'>
+    <div className='auth-page'>
      
        
         <LoginForm handleFinish={(values :any) => console.log(values)}/>

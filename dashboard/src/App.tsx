@@ -1,12 +1,9 @@
-import './App.css';
 import {useEffect, useState} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import {useDispatch } from 'react-redux';
 import axios from 'axios'
-import { RootState } from './redux/store';
 import { add, remove } from './redux/reducers/userSlice';
-import { Routes } from 'react-router-dom';
-import { Route } from 'react-router';
 import Public from './routes/public';
+import './assets/style/index.scss'
 function App() {
   axios.defaults.baseURL = process.env.REACT_APP_baseUrl
   const dispatch = useDispatch()
