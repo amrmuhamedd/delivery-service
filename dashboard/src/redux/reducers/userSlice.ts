@@ -4,13 +4,15 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 export interface UserState {
   username: string,
   id : string,
-  roles : string
+  roles : string,
+  isValidUser : boolean,
 }
 
 const initialState: UserState = {
     username: '',
     id : '',
-    roles : ''
+    roles : '',
+    isValidUser : false
 }
 
 export const userSlice = createSlice({
@@ -23,7 +25,9 @@ export const userSlice = createSlice({
     remove: (state) => {
 return{   id : '' ,
       roles: '',
-    username : ''}
+    username : '',
+  isValidUser : false
+  }
     },
   },
 })

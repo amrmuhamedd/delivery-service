@@ -1,13 +1,16 @@
 .auth-form{
     background-color: #FCFCFC;
-    min-width: 500px;
-    height: 640px;
+    min-width:25%;
+    height: 60%;
     border-radius: 15px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width : "762px") {
+        height: 90%;
+    }
     .ant-btn {
         display: block;
         width: 200px;
@@ -16,8 +19,10 @@
             background-color: #423936;     
         }
     }
+    .ant-form {
+        width: 90%;
+    }
     .ant-input {
-        width: 400px;
         height: 40px;
     }
     .ant-form-item-control-input-content{

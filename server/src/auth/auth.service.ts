@@ -39,9 +39,11 @@ export class AuthService {
         username: user.username,
         roles: user.roles,
         id: user._id,
+        email : user.email
       };
       return {
         access_token: this.jwtService.sign(payload),
+        user : payload
       };
     }
     return null;
@@ -82,6 +84,7 @@ export class AuthService {
       };
       return {
         access_token: this.jwtService.sign(tokenPayload),
+        user : tokenPayload
       };
     } catch (err) {
       throw new HttpException(
