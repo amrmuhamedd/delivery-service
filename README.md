@@ -54,4 +54,4 @@ PORT=app port (3006)<br/>
 REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
 
 then you should run
-###'docker-compose up --build -V'
+###`docker-compose up --build -V`
