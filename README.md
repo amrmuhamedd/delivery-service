@@ -2,7 +2,7 @@
 
 to make app work correct : <br/>
 
-- server app at dir : server <br/>
+## server app at dir : server <br/>
 you should create .env file and add <br/>  
 DataBaseUrl = add your database url (mongodb)
 
@@ -17,7 +17,7 @@ run ### 'npm run start'<br/>
 then you can see swager documentation of api at http://localhost:4000/docs
 
 
-- client todo app at dir : client<br/>
+## client todo app at dir : client<br/>
 you should create .env file and add <br/>
 PORT=app port (3005)<br/>
 REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
@@ -28,7 +28,7 @@ and then you should run this commands : <br/>
 then
 ### `npm start`
 
-- admin  app at dir : dashboard<br/>
+## admin  app at dir : dashboard<br/>
 you should create .env file and add <br/>
 PORT=app port (3006)<br/>
 REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
