@@ -17,10 +17,6 @@ run ### 'npm run start'<br/>
 then you can see swager documentation of api at http://localhost:4000/docs
 
 
-
-
-
-
 - client todo app at dir : client<br/>
 you should create .env file and add <br/>
 PORT=app port (3005)<br/>
@@ -40,3 +36,22 @@ REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
 ### `npm install`
 then
 ### `npm start`
+
+## Docker
+you first should create .env files on every app
+
+- server app at dir : server <br/>
+you should create .env file and add <br/>  
+DataBaseUrl = add your database url (mongodb)
+
+- client todo app at dir : client<br/>
+you should create .env file and add <br/>
+PORT=app port (3005)<br/>
+
+- admin  app at dir : dashboard<br/>
+you should create .env file and add <br/>
+PORT=app port (3006)<br/>
+REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
+
+then you should run
+###'docker-compose up --build -V'
