@@ -1,0 +1,19 @@
+.update-parcel-form{
+    padding: 60px 20px;
+    .ant-btn {
+        width: 200px;
+        height: 50px;
+        background-color: green;
+        &:hover {
+        background-color: rgb(62, 167, 62);
+        }
+    }
+    .ant-input {
+        height: 40px;
+    }
+    .ant-form-item-control-input-content{
+    display: flex;
+    height: 40px;
+        justify-content: center;
+    }
+}
