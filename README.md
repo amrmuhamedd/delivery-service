@@ -53,5 +53,5 @@ you should create .env file and add <br/>
 PORT=app port (3006)<br/>
 REACT_APP_baseUrl= back end url (http:localhost:4000)<br/>
 
-then you should run
+then you should run <br/>
 ###`docker-compose up --build -V`
