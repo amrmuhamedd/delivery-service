@@ -18,7 +18,8 @@ export class Parcels {
 
   @Prop({enum : ParcelStatus , default : ParcelStatus.notPicked})
   status: ParcelStatus;
-  @Prop({ type : Date, default: Date.now })
+
+  @Prop({ type : Date })
   pickupDate : Date
 
   @Prop({ type : Date })
