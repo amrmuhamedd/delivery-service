@@ -1,14 +1,22 @@
 .auth-page {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #292524;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #292524;
 }
-.logout-btn{
-    position: absolute;
-    top: 50px;
-    right: 100px;
+.logout-btn {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  display: flex;
+  width: 220px;
+  justify-content: space-around;
+  align-items: center;
+    .name {
+        font-size: 25px;
+    }
+  .ant-btn {
     background-color: #993f3f;
     color: white;
     padding: 20px;
@@ -16,7 +24,8 @@
     justify-content: center;
     align-items: center;
     &:hover {
-    background-color: #962929 !important;
-        color: white;
+      background-color: #962929 !important;
+      color: white;
     }
+  }
 }
