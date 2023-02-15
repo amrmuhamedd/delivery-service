@@ -1,4 +1,4 @@
-- server app at dir : server <br/>
+- server app 
 you should create .env file and add <br/>  
 DataBaseUrl = add your database url (mongodb)
 
