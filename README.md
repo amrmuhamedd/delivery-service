@@ -14,6 +14,8 @@ you will see seed complete at console so you need to start project<br/>
 
 run ### 'npm run start'<br/>
 
+then you can see swager documentation of api at http://localhost:4000/docs
+
 
 
 
