@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../dashboard/src/pages/login.tsx"  ]
 }

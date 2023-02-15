@@ -15,8 +15,8 @@ function App() {
   const user = useSelector((state: RootState) => state.user)
   useEffect(()=> {
     if(user.roles === 'bicker'){
-      notification.error({
-        message : 'you cant login to dashboard please go to client app'
+      notification.warning({
+        message : 'you cant login to dashboard please go to client app',
       })
       localStorage.clear()
       dispatch(remove())
