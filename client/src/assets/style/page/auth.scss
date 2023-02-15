@@ -5,3 +5,18 @@
     align-items: center;
     background-color: #292524;
 }
+.logout-btn{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background-color: #993f3f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+    background-color: #962929 !important;
+        color: white;
+    }
+}
